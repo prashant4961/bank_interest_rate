@@ -33,3 +33,29 @@ Use the data set to find the parameters affecting the loan interest rates for ap
 
 # TARGET COLUMN
 * Interest.Rates > The interest rate fixed by the bank for each customer
+
+
+
+
+# EDA part on columns
+1. ID         >>> Dropped id column as it contains unique values
+2. Amount_Requested >>>>  
+    * it had . values and na value replaced it with median value .... 
+    * no need to remove outliers as it is in range
+
+3. Amount_Funded.By.Investors
+    * changed data type from object
+    *  no need to replace outliers as it is in range
+
+4. Target column (Interest_Rate)
+    * replaced % sign and converted to float.
+
+5. Loan_Length
+    * just reploaced values 
+
+6. Loan_Purpose
+    * created dummy data freame  as it wad having 14 unique values and were of great importance
+    * merged it with original dataframe
+
+7. Debt_To_Income_Ratio
+    * removed % and changed dtype to float
