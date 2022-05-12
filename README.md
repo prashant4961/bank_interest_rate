@@ -59,3 +59,12 @@ Use the data set to find the parameters affecting the loan interest rates for ap
 
 7. Debt_To_Income_Ratio
     * removed % and changed dtype to float
+
+9. Revolving_CREDIT_Balance
+    * Continuous outliers ,therefore performed log transformatiom and removed outliers
+
+10. Inquiries_in_the_Last_6_Months
+    * removed outliers using upper_tail imputation
+
+11. Employment_Length
+    *  performed replace operation , as other operation did not give good results(label encoding,applying function using Regex)
