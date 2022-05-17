@@ -8,19 +8,84 @@
 </head>
 <body>
     
-<h1>INTEREST RATE GIVEN TO CUSTOMERS</h1> 
+<h1>% INTEREST RATE GIVEN TO CUSTOMERS</h1> 
 
 
 <form method="POST" action = "/interest_rate">
 
-<label> Loan_Purpose </label>
-<input type ="text" name ='Loan_Purpose'><br>
 
-<label> Home_Ownership </label>
-<input type ="text" name ='Home_Ownership'><br>
+<label for="Loan_Purpose">Choose a loan purpose :</label>
 
-<label> State  </label>
-<input type ="text" name ='State'><br>
+<select name="Loan_Purpose" id="Loan_Purpose">
+<option value="car">car</option>
+<option value="credit_card">credit_card</option>
+<option value="debt_consolidation">debt_consolidation</option>
+<option value="educational">educational</option>
+<option value="home_improvement">home_improvement</option>
+<option value="house">house</option>
+<option value="major_purchase">major_purchase</option>
+<option value="medical">medical</option>
+<option value="moving">moving</option>
+<option value="renewable_energy">renewable_energy</option>
+<option value="small_business">small_business</option>
+<option value="vacation">vacation</option>
+<option value="wedding">wedding</option>
+<option value="other">other</option>
+
+</select>
+<br>
+
+<label for="Home_Ownership">Choose home ownership :</label>
+
+<select name="Home_Ownership" id="Home_Ownership">
+<option value="OWN">OWN</option>
+<option value="RENT">RENT</option>
+<option value="OTHER">OTHER</option>
+</select>
+
+
+<br>
+<label for="State">State :</label>
+
+<select name="State" id="State">
+<option value="AK">AK</option>
+<option value="AL">AL</option>
+<option value="AR">AR</option>
+<option value="AZ">AZ</option>
+<option value="CA">CA</option>
+<option value="CO">CO</option>
+<option value="CT">CT</option>
+<option value="DC">DC</option>
+<option value="DE">DE</option>
+<option value="FL">FL</option>
+<option value="GA">GA</option>
+<option value="HI">HI</option>
+<option value="IL">IL</option>
+<option value="IN">IN</option>
+
+<option value="KS">KS</option>
+<option value="KY">KY</option>
+<option value="LA">LA</option>
+<option value="MA">MA</option>
+<option value="MD">MD</option>
+<option value="MI">MI</option>
+<option value="MN">MN</option>
+<option value="MO">MO</option>
+<option value="MS">MS</option>
+<option value="MT">MT</option>
+<option value="NC">NC</option>
+<option value="NH">NH</option>
+<option value="NJ">NJ</option>
+<option value="NM">NM</option>
+<option value="NV">NV</option>
+<option value="NY">NY</option>
+<option value="OH">OH</option>
+<option value="OK">OK</option>
+<option value="OR">OR</option>
+<option value="PA">PA</option>
+
+</select>
+</br>
 
 <label> Amount_Requested </label>
 <input type ="text" name ='Amount_Requested'><br>
